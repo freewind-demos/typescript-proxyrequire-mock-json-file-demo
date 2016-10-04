@@ -8,4 +8,4 @@ npm install
 npm test
 ```
 
-`npm test` runs `mocha spec` internally.
+`npm test` runs `mocha --compilers js:babel-core/register spec` internally.
