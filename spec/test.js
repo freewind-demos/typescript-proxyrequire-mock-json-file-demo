@@ -1,4 +1,5 @@
 import assert from 'assert';
+import expect from 'expect';
 
 describe('Array', function() {
   describe('#indexOf()', function() {
@@ -6,7 +7,7 @@ describe('Array', function() {
       assert.equal(-1, [1,2,3].indexOf(4));
     });
     it('should run async test', function(done) {
-      assert.equal(2, 1+1);
+      expect(1+1).toEqual(2);
       done();
     });
   });
