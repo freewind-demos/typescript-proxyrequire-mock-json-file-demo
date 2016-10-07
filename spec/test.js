@@ -1,14 +1,14 @@
-import assert from 'assert';
-import expect from 'expect';
+import chai from 'chai';
+import sinon  from 'sinon';
+import sinonChai from 'sinon-chai';
 
-describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      assert.equal(-1, [1,2,3].indexOf(4));
-    });
-    it('should run async test', function(done) {
-      expect(1+1).toEqual(2);
-      done();
-    });
+chai.should();
+chai.use(sinonChai);
+
+describe('sinon-chai', function () {
+  it('should call the mocked function', function () {
+    const spy = sinon.spy();
+    spy(123);
+    spy.should.have.been.calledWith(123);
   });
 });
