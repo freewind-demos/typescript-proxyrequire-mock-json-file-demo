@@ -1,10 +1,11 @@
-Mocha "sinon" Mock Demo
-=======================
+TypeScript "proxyrequire" Mock Json File Demo
+=============================================
 
-使用"sinon"将已经存在的function替换为mock。
+在TypeScript中`import ... from './config.json'`，如何在测试时替换掉`config.json`里的内容方便测试？
+
+必须使用`proxyrequire`。
 
 ```
 npm install
 npm test
 ```
-
